@@ -8,6 +8,10 @@ React application to fetch and list itunes albums, from itunes api
 
 `git clone https://github.com/faizalmunna/ke-assign.git`
 
+### 2). Installing dependencies  
+
 `npm install`
+
+### 2). Start dev server
 
 `npm run start`
