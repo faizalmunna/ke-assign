@@ -1,0 +1,77 @@
+.single{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  position: relative;
+  background: #f8f8f8;
+  margin-bottom: 20px;
+  .close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    span{
+      font-size: 20px;
+    }
+  }
+  .description{
+    display: flex;
+    flex: 1;
+    margin-left: 20px;
+  }
+  .album-name{
+    color: #3A4751;
+    font-size: 24px;
+  }
+  .album-artist{
+    color: #868F97;
+  }
+  .meta{
+    width: 70%;
+    &-group{
+      margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+    }
+    &-title{
+      color: #3A4751;
+      font-size: 16px;
+      font-family: 'Fira Sans', sans-serif;
+    }
+    &-value{
+      color: #868F97;
+      font-size: 14px;
+      font-family: 'Fira Sans', sans-serif;
+    }
+  }
+
+}
+
+@media (max-width: 1405px) and (min-width: 1076px){
+  .single {
+    .meta{
+      width:60%;
+    }
+    .thumb{
+      width: 310px;
+    }
+  }
+}
+
+@media (max-width: 1075px){
+  .single {
+    flex-direction: column;
+    .description{
+      margin-left: 0;
+      flex-direction: column;
+    }
+    .meta{
+      width: 100%;
+    }
+    .list{
+      margin-top: 30px;
+    }
+  }
+}

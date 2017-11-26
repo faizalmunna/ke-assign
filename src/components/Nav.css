@@ -1,0 +1,33 @@
+.main-nav .btn {
+  background: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 0;
+  margin-right: -2px;
+  cursor: pointer; }
+  .main-nav .btn:focus {
+    outline: none; }
+  .main-nav .btn span {
+    font-size: 24px; }
+
+.main-nav .active > .btn {
+  border-right: 3px solid #F30240; }
+  .main-nav .active > .btn span {
+    color: #F30240; }
+
+.main-menu {
+  list-style: none; }
+
+@media (max-width: 745px) {
+  .main-nav .btn {
+    margin-right: 10px;
+    margin-bottom: -2px; }
+  .main-nav li {
+    float: left; }
+  .main-nav .active > .btn {
+    border-right: none;
+    border-bottom: 3px solid #F30240; }
+    .main-nav .active > .btn span {
+      color: #F30240; } }

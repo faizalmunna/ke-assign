@@ -1,0 +1,97 @@
+.album{
+  position: relative;
+  box-sizing: border-box;
+  width: 310px;
+  height: 310px;
+  float: left;
+  margin: 0 10px 20px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 5px 5px 18px 0 rgba(0,0,0,0.35);
+  //cursor: pointer;
+  transition: all .2s linear;
+  &-selected{
+    box-shadow: 8px 8px 18px 5px rgba(#f30240, 0.9);
+  }
+  &:hover{
+    box-shadow: 8px 8px 18px 0 rgba(0,0,0,0.62);
+  }
+  .thumb{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+  }
+  .description{
+    position: absolute;
+    background-image: linear-gradient(-180deg, rgba(0,0,0,0.01) 3%, rgba(0,0,0,0.59) 38%, rgba(0,0,0,0.80) 100%);
+    color: #ffffff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 160px;
+    padding: 30px 10px 10px;
+  }
+  .btn{
+    position: absolute;
+    border: none;
+    background:transparent;
+    right:0;
+    cursor: pointer;
+    &:focus{
+      outline: none;
+    }
+    span{
+      color:#fff;
+      font-size: 16px;
+    }
+    &-favourite{
+      span {
+        font-size: 32px;
+        color: rgba(#ccc, 0.7);
+      }
+    }
+    &-is-favourite{
+      span {
+        color: darken(yellow, 5);
+      }
+    }
+  }
+  &-name{
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  &-artist{
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  .price{
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  &-footer{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right:10px;
+  }
+}
+
+@media (max-width: 745px){
+  .album{
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 321px){
+  .album{
+    margin: 10px 0;
+    width: 270px;
+    height: 270px;
+  }
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700|Fira+Sans:200,300,400,500,600,700,800,900');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+h1,h2,h3,h4,h5, ul, input {
+  margin: 0;
+  padding: 0;
+  color: #3A4751;
+  font-family: 'Fira Sans', sans-serif;
+}
+span, a, div, p{
+  font-family: 'Fira Mono', monospace;
+  color: #868F97;
+  font-size: 14px;
+  font-weight: 200;
+}
+.thumb img{
+  width: 100%;
+  height: auto;
+}
+.app {
+  max-width: 1360px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+.body{
+  display: flex;
+  flex-direction: row;
+}
+.main{
+  flex: 1;
+  border-left: 1px solid rgba(#868F97, 0.22);
+  .Select{
+    margin: 0 10px 20px;
+    &-control{
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid rgba(#868F97, 0.22);
+    }
+    .Select-value{
+      border-radius: 0 !important;
+      color: #f30140;
+      background-color: rgba(#f30140, 0.1);
+      font: 'Fira Mono', monospace;
+      font-size: 12px;
+      border: none
+    }
+  }
+}
+
+@media (max-width: 1405px) and (min-width: 1076px){
+  .app {
+    max-width: 1040px;
+  }
+}
+@media (max-width: 1075px) and  (min-width: 746px){
+  .app {
+    max-width: 700px;
+  }
+}
+@media (max-width: 745px){
+  .app {
+    max-width: 310px;
+  }
+  .body{
+    flex-direction: column;
+  }
+  .main{
+    border-left: none;
+    border-top: 1px solid rgba(#868F97, 0.22);
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,50 @@
+.main-nav{
+  .btn{
+    background: transparent;
+    border:none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 0;
+    margin-right: -2px;
+    cursor: pointer;
+    &:focus{
+      outline: none;
+    }
+    span{
+      font-size: 24px;
+    }
+  }
+  .active{
+    >.btn{
+      border-right: 3px solid #F30240;
+      span{
+        color: #F30240;
+      }
+    }
+  }
+}
+.main-menu{
+  list-style: none;
+}
+
+@media (max-width: 745px){
+  .main-nav{
+    .btn{
+      margin-right: 10px;
+      margin-bottom: -2px;
+    }
+    li{
+      float: left;
+    }
+    .active{
+      >.btn{
+        border-right:none;
+        border-bottom: 3px solid #F30240;
+        span{
+          color: #F30240;
+        }
+      }
+    }
+  }
+}
